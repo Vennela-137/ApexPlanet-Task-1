@@ -1,0 +1,99 @@
+
+:root {
+  --primary: #70a0ba;
+  --background: #f4f7fa;
+  --text: #333;
+  --card: #ffffff;
+  --footer-bg: #e0e0e0;
+  --footer-text: #333;
+}
+
+body.dark {
+  --background: #121212;
+  --text: #eee;
+  --card: #1f1f1f;
+  --footer-bg: #1a1a1a;
+  --footer-text: #ccc;
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+.container {
+  width: 90%;
+  max-width: 1000px; 
+  margin: auto;
+  padding: 20px;
+  height: 100%;
+}
+
+
+.banner {
+  background-color: var(--primary);
+  color: black;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+}
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+.card {
+  background-color: var(--card);
+  border-radius: 10%;
+  padding: 2%;
+  margin: 20px 0;
+  box-shadow: 20px;
+  text-align: center; 
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;  
+  height: contain;
+}
+
+
+button, .link-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+button:hover, .link-btn:hover {
+  background-color: #005f8a;
+}
+theme-btn {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  background: black;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0)};
+}
